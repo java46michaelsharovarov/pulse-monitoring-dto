@@ -10,9 +10,9 @@ public class PulseProbe {
 	public PulseProbe() {
 	}
 
-	public PulseProbe(long patientID, long timestamp, long sequenceNumber, int value) {
+	public PulseProbe(long patientID, long sequenceNumber, int value) {
 		this.patientID = patientID;
-		this.timestamp = timestamp;
+		this.timestamp = System.currentTimeMillis();
 		this.sequenceNumber = sequenceNumber;
 		this.value = value;
 	}
@@ -20,7 +20,6 @@ public class PulseProbe {
 	@Override
 	public String toString() {
 		return "PulseProbe#" + sequenceNumber + " [patientID=" + patientID + ", timestamp=" + timestamp + ", value=" + value + "]";
-	} 	
-	
+	} 		
 	
 }
