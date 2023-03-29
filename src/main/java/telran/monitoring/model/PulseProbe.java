@@ -3,6 +3,7 @@ package telran.monitoring.model;
 import lombok.*;
 
 @NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode
 @ToString
 public class PulseProbe {
