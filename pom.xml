@@ -3,4 +3,21 @@
   <groupId>telran.monitoring</groupId>
   <artifactId>pulse-monitoring-dto</artifactId>
   <version>0.0.1</version>
+  <properties>
+	  <maven.compiler.target>17</maven.compiler.target>
+	  <maven.compiler.source>17</maven.compiler.source>
+  </properties>
+  <dependencies>
+	<dependency>
+		<groupId>jakarta.validation</groupId>
+		<artifactId>jakarta.validation-api</artifactId>
+		<version>3.0.2</version>
+	</dependency>
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<optional>true</optional>
+		<version>1.18.26</version>
+	</dependency>
+  </dependencies>
 </project>
